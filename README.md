@@ -1,5 +1,7 @@
 # Kütüphane Otomasyonu 
 
+- Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği Yazaılım Mühendisliği dersinde yaptığımız Kütüphane Otomasyonuna ait dökümanlar burada toplanmıştır.
+
 - Ders sunumları 
 
 - Derste yapılan ödevler
