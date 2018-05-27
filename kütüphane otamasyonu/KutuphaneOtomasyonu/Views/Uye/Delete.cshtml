@@ -1,0 +1,70 @@
+﻿@model KutuphaneOtomasyonu.Models.Uye
+
+@{
+    ViewBag.Title = "Sil";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sil</title>
+</head>
+<body>
+    <h3>Bu üyeyi silmek istiyor musunuz?</h3>
+    <div>
+        <h4>@Html.DisplayFor(model => model.uyeAd)</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeAd)*@
+                İsim
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeAd)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeSoyad)*@
+                Soyisim
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeSoyad)
+            </dd>
+            
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeSifre)*@
+                Parola
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.uyeSifre)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeTel)*@
+                Telefon Numarası
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeTel)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Sil" class="btn btn-default" /> 
+                @Html.ActionLink("Üye Listesine Dön", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

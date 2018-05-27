@@ -1,0 +1,73 @@
+﻿@model IEnumerable<KutuphaneOtomasyonu.Models.Kitap>
+
+@{
+    ViewBag.Title = "Sonuçlar";
+}
+
+<!DOCTYPE html>
+
+<html>
+<link href="~/Content/Button.css" rel="stylesheet" />
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body style="margin-top: 30px;">
+    <h3>Sonuçlar</h3>
+    <hr style="height:1px;border:none;color:#333;background-color:#a7aeba;"/>
+    
+    @foreach (var item in Model)
+    {
+        <table width="100%" style="max-width:1600px;">
+            <tr>
+                <td width="50%">
+                    <b>İsim</b> @Html.DisplayFor(modelItem => item.kitapAd)
+                </td>
+                @if (User.Identity.IsAuthenticated && item.kitapStok == true)
+                {
+                    <td rowspan="5">
+                        @*<button type="submit" style="float:right;" class="button">Ödünç Al</button>*@
+                        @Html.ActionLink("Ödünç Al", "OduncAl", "Home", new { id = item.kitapID, kullaniciId = User.Identity.Name.Split('|')[1] }, new{ @class= "button" })
+                    </td>
+                }
+            </tr>
+            <tr>
+                <td>
+                    <b>Stok:</b>
+                    @*@Html.DisplayFor(modelItem => item.kitapStok)*@
+                    @if(item.kitapStok == true)
+                    {
+                       <content>Stokta</content>
+                    }else if(item.kitapStok == false)
+                    {
+                        <content>Stokta Yok / Ödünçte</content>
+                    }
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Tür:</b> @Html.DisplayFor(modelItem => item.Tur.turAd)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Yayınevi:</b> @Html.DisplayFor(modelItem => item.YayinEvi.yayineviAd)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Yazar:</b> @Html.DisplayFor(modelItem => item.Yazar.yazarAd) @Html.DisplayFor(modelItem => item.Yazar.yazarSoyad)
+                </td>
+            </tr>
+        </table>
+            <hr style="height:1px;border:none;color:#333;background-color:#a7aeba;"/>
+}
+    @if(Model.ToList().Count == 0)
+    {
+        <h5>Sonuç Bulunamadı.</h5>
+    }
+
+
+</body>
+</html>

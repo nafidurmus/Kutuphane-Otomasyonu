@@ -1,0 +1,36 @@
+.prof-page-info{padding:10px;}
+	  .prof-img{width:100%;height:300px;position:relative;border:5px solid #666;}
+	   .prof-img img{position:absolute;width:100%;height:100%;padding:3px;}
+.img-title {
+    position: absolute;
+    bottom: 0px;
+    background: #47a447;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #fff;
+    padding: 5px 5px 5px 5px;
+}
+	.info{padding:10px;font-size:14px;border-bottom:1px solid #ddd;}
+	.prog-page{border:1px solid #ddd;box-shadow:1px 1px 5px #ddd;position:relative;}
+.header-info {
+    position: relative;
+    padding-left: 25px;
+    background: #47a447;
+    color: #fff;
+    padding: 10px;
+}
+	.prof-info .info i{padding:8px 9px 0px 9px;box-shadow:1px 1px 5px #ddd;background:#0099ff;width:30px;height:30px;border-radius:50%;color:#fff;margin-right:10px;}
+	.header-info i{padding-right:8px;font-size:25px;}
+	
+.tags-label {background:#0099ff;color:#fff;position:absolute;padding:7px 6px 7px 5px;
+	    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);z-index:1;
+}
+
+.tags-label i{color:#fff;}
+.tags-label span{padding:4px;border:1px solid #fff;padding:4px 7px 3px 9px}
+.header-info a{cursor:pointer;float:right;position:absolute;}
+.header-btn-edit{float:right;top:15px;position:absolute;right:12px;}
+.header-btn-edit a{background:#2b7dc3;color:#fff;padding:10px;border-radius:20px;box-shadow:1px 1px 5px #eee;}
+.header-btn-edit a i{color:#fff;padding-right:8px;}

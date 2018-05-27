@@ -1,0 +1,61 @@
+﻿@model KutuphaneOtomasyonu.Models.Uye
+@{
+    ViewBag.Title = "İade";
+}
+<link href="~/Content/kitap_iadesi.css" rel="stylesheet" />
+<div class="near_by_hotel_wrapper">
+<div class="near_by_hotel_container">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ckbCheckAll").click(function () {
+                $(".checkBoxClass").prop('checked', $(this).prop('checked'));
+            });
+        });
+    </script>
+
+    
+@using (Html.BeginForm("Iade", "Home", FormMethod.Post))
+{
+    <table id="tableOne" class="table no-border custom_table dataTable no-footer dtr-inline">
+
+        <thead>
+            <tr>
+                <th>
+                    @if (Model.OduncAlma.Count() != 0)
+                    {
+                        @Html.CheckBox(" ", false, new { @class = "ckbCheckAll" })
+                    }
+                 </th>
+                <th>Kitap Adı </th>
+                <th>Yazar</th>
+                <th>Basım Yılı</th>
+                <th>Türü</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OduncAlma)
+            {
+                <tr>
+                    <td style="width:40px;"><input type="checkbox" name="idler" class="checkBoxClass" value="@item.oduncID"/></td>
+                    <td>@Html.DisplayFor(m => item.Kitap.kitapAd)</td>
+                    <td>@Html.DisplayFor(m => item.Kitap.Yazar.yazarAd) @Html.DisplayFor(m => item.Kitap.Yazar.yazarSoyad)</td>
+                    <td>2018</td>
+                    <td>@Html.DisplayFor(m => item.Kitap.Tur.turAd)</td>
+                </tr>
+            }
+            
+            <div class="panel-title text-center">
+                <h1 class="title">Kitap İadesi</h1>
+                <hr />
+            </div>
+        </tbody>
+        
+    </table>
+    @Html.Raw(TempData["msg"])
+    <button type="submit" class="btn btn-success btn-lg btn-block"> Seçilenleri İade Et</button>
+    
+}
+</div>
+</div>

@@ -1,0 +1,79 @@
+﻿@model KutuphaneOtomasyonu.Models.Uye
+@*@model Tuple<KutuphaneOtomasyonu.Models.Uye, KutuphaneOtomasyonu.Models.OduncAlma>*@
+
+@{
+    ViewBag.Title = Html.DisplayFor(model => model.uyeAd) + " - Detay Bilgisi";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detaylar</title>
+</head>
+<body>
+    <div>
+        <h4>Üyelik Bilgileri</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            
+            <div>
+                <h4><b>Üye</b></h4><br />
+            </div>
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeAd)*@
+                İsim
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeAd)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeSoyad)*@
+                Soyisim
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeSoyad)
+            </dd>
+            
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeSifre)*@
+                Parola
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeSifre)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.uyeTel)*@
+                Telefon
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.uyeTel)
+            </dd>
+            <div>
+                <h4><b>Ödünç Alınanlar</b></h4>
+            </div>
+            @foreach(var item in Model.OduncAlma){
+                <dd>
+                    @Html.DisplayFor(modelitem => item.Kitap.kitapAd)
+
+                </dd>
+            }
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Ödünç İade Sayfası", "Iade", "Home", new { id = User.Identity.Name.Split('|')[1] }, null) | 
+        @Html.ActionLink("Profili Düzenle", "Edit", new { id = Model.uyeID }) | 
+        @if (!User.Identity.IsAuthenticated || (User.Identity.IsAuthenticated && (User.Identity.Name.Split('|')[0].ToLower() == "admin" && User.Identity.Name.Split('|')[2].ToLower() == "admin")))
+        {
+            @Html.ActionLink("Üye Listesine Git", "Index")
+        }
+    </p>
+</body>
+</html>

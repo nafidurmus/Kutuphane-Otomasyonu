@@ -1,0 +1,56 @@
+﻿@model IEnumerable<KutuphaneOtomasyonu.Models.YayinEvi>
+
+@{
+    ViewBag.Title = "Yayın Evleri";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body style="margin-top: 30px;">
+    <p>
+        @Html.ActionLink("Yeni Yayın Evi Ekle", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.yayineviAd)*@
+                Yayın Evi Adı
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.yayineviTel)*@
+                Telefon Numarası
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.yayineviAdres)*@
+                Adres
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.yayineviAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.yayineviTel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.yayineviAdres)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new { id=item.yayineviID }) |
+                @Html.ActionLink("Detaylar", "Details", new { id=item.yayineviID }) |
+                @Html.ActionLink("Sil", "Delete", new { id=item.yayineviID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

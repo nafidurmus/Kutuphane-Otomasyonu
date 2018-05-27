@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KütüphaneModelStoreContainer" CdmEntityContainer="KütüphaneEntities1">
+    <EntitySetMapping Name="Kitap">
+      <EntityTypeMapping TypeName="KütüphaneModel.Kitap">
+        <MappingFragment StoreEntitySet="Kitap">
+          <ScalarProperty Name="kitapID" ColumnName="kitapID" />
+          <ScalarProperty Name="kitapAd" ColumnName="kitapAd" />
+          <ScalarProperty Name="yazarID" ColumnName="yazarID" />
+          <ScalarProperty Name="yayinEviID" ColumnName="yayinEviID" />
+          <ScalarProperty Name="turID" ColumnName="turID" />
+          <ScalarProperty Name="kitapStok" ColumnName="kitapStok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OduncAlma">
+      <EntityTypeMapping TypeName="KütüphaneModel.OduncAlma">
+        <MappingFragment StoreEntitySet="OduncAlma">
+          <ScalarProperty Name="oduncID" ColumnName="oduncID" />
+          <ScalarProperty Name="uyeID" ColumnName="uyeID" />
+          <ScalarProperty Name="kitapID" ColumnName="kitapID" />
+          <ScalarProperty Name="oduncAlmaTarihi" ColumnName="oduncAlmaTarihi" />
+          <ScalarProperty Name="oduncTeslimTarihi" ColumnName="oduncTeslimTarihi" />
+          <ScalarProperty Name="gecikmeSuresi" ColumnName="gecikmeSuresi" />
+          <ScalarProperty Name="cezaBedeli" ColumnName="cezaBedeli" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tur">
+      <EntityTypeMapping TypeName="KütüphaneModel.Tur">
+        <MappingFragment StoreEntitySet="Tur">
+          <ScalarProperty Name="turID" ColumnName="turID" />
+          <ScalarProperty Name="turAd" ColumnName="turAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uye">
+      <EntityTypeMapping TypeName="KütüphaneModel.Uye">
+        <MappingFragment StoreEntitySet="Uye">
+          <ScalarProperty Name="uyeID" ColumnName="uyeID" />
+          <ScalarProperty Name="uyeSifre" ColumnName="uyeSifre" />
+          <ScalarProperty Name="uyeAd" ColumnName="uyeAd" />
+          <ScalarProperty Name="uyeSoyad" ColumnName="uyeSoyad" />
+          <ScalarProperty Name="uyeTel" ColumnName="uyeTel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YayinEvi">
+      <EntityTypeMapping TypeName="KütüphaneModel.YayinEvi">
+        <MappingFragment StoreEntitySet="YayinEvi">
+          <ScalarProperty Name="yayineviID" ColumnName="yayineviID" />
+          <ScalarProperty Name="yayineviAd" ColumnName="yayineviAd" />
+          <ScalarProperty Name="yayineviTel" ColumnName="yayineviTel" />
+          <ScalarProperty Name="yayineviAdres" ColumnName="yayineviAdres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yazar">
+      <EntityTypeMapping TypeName="KütüphaneModel.Yazar">
+        <MappingFragment StoreEntitySet="Yazar">
+          <ScalarProperty Name="yazarID" ColumnName="yazarID" />
+          <ScalarProperty Name="yazarAd" ColumnName="yazarAd" />
+          <ScalarProperty Name="yazarSoyad" ColumnName="yazarSoyad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yonetici">
+      <EntityTypeMapping TypeName="KütüphaneModel.Yonetici">
+        <MappingFragment StoreEntitySet="Yonetici">
+          <ScalarProperty Name="yoneticiID" ColumnName="yoneticiID" />
+          <ScalarProperty Name="yoneticiSifre" ColumnName="yoneticiSifre" />
+          <ScalarProperty Name="yoneticiAd" ColumnName="yoneticiAd" />
+          <ScalarProperty Name="yoneticiSoyad" ColumnName="yoneticiSoyad" />
+          <ScalarProperty Name="uyeID" ColumnName="uyeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

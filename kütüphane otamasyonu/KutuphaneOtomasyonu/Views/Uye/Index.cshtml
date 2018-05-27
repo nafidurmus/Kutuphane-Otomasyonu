@@ -1,0 +1,66 @@
+﻿@model IEnumerable<KutuphaneOtomasyonu.Models.Uye>
+
+@{
+    ViewBag.Title = "Üyeler";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Üyeler</title>
+</head>
+<body style="margin-top: 30px;">
+    <p>
+        @Html.ActionLink("Yeni Üye Ekle", "Login")
+    </p>
+    <table class="table">
+        <tr>
+            
+            <th>
+                @*@Html.DisplayNameFor(model => model.uyeAd)*@
+                İsim
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.uyeSoyad)*@
+                Soyisim
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.uyeSifre)*@
+                Parola
+            </th>
+            
+            <th>
+                @*@Html.DisplayNameFor(model => model.uyeTel)*@
+                Telefon Numarası
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.uyeAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uyeSoyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uyeSifre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uyeTel)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new { id=item.uyeID }) |
+                @Html.ActionLink("Detaylar", "Details", new { id=item.uyeID }) |
+                @Html.ActionLink("Sil", "Delete", new { id=item.uyeID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

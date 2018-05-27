@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Anasayfa";
+}
+<link href="~/Content/arama_sayfasi.css" rel="stylesheet" />
+@using(Html.BeginForm("Index","Home", FormMethod.Post)) {
+
+    <div>
+        <h1 class="centre">Kitap Arama</h1>
+        <div class="form-wrapper cf">
+            <input type="text" name="kitapAdi" placeholder="Kitap veya Yayın Arayın..." required>
+            <Button type="submit">Ara</Button>
+        </div>
+    </div>
+
+}

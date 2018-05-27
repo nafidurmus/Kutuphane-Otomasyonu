@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KütüphaneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Kitap">
+    <Key>
+      <PropertyRef Name="kitapID" />
+    </Key>
+    <Property Name="kitapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kitapAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="yazarID" Type="int" Nullable="false" />
+    <Property Name="yayinEviID" Type="int" Nullable="false" />
+    <Property Name="turID" Type="int" Nullable="false" />
+    <Property Name="kitapStok" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OduncAlma">
+    <Key>
+      <PropertyRef Name="oduncID" />
+    </Key>
+    <Property Name="oduncID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uyeID" Type="int" Nullable="false" />
+    <Property Name="kitapID" Type="int" Nullable="false" />
+    <Property Name="oduncAlmaTarihi" Type="datetime" Nullable="false" />
+    <Property Name="oduncTeslimTarihi" Type="datetime" Nullable="false" />
+    <Property Name="gecikmeSuresi" Type="int" Nullable="false" />
+    <Property Name="cezaBedeli" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tur">
+    <Key>
+      <PropertyRef Name="turID" />
+    </Key>
+    <Property Name="turID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="turAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Uye">
+    <Key>
+      <PropertyRef Name="uyeID" />
+    </Key>
+    <Property Name="uyeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uyeSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="uyeAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="uyeSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="uyeTel" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YayinEvi">
+    <Key>
+      <PropertyRef Name="yayineviID" />
+    </Key>
+    <Property Name="yayineviID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yayineviAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="yayineviTel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="yayineviAdres" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Yazar">
+    <Key>
+      <PropertyRef Name="yazarID" />
+    </Key>
+    <Property Name="yazarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yazarAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="yazarSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Yonetici">
+    <Key>
+      <PropertyRef Name="yoneticiID" />
+    </Key>
+    <Property Name="yoneticiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="yoneticiSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="yoneticiAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="yoneticiSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="uyeID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Kitap_Tur">
+    <End Role="Tur" Type="Self.Tur" Multiplicity="1" />
+    <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tur">
+        <PropertyRef Name="turID" />
+      </Principal>
+      <Dependent Role="Kitap">
+        <PropertyRef Name="turID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitap_YayinEvi">
+    <End Role="YayinEvi" Type="Self.YayinEvi" Multiplicity="1" />
+    <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YayinEvi">
+        <PropertyRef Name="yayineviID" />
+      </Principal>
+      <Dependent Role="Kitap">
+        <PropertyRef Name="yayinEviID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kitap_Yazar">
+    <End Role="Yazar" Type="Self.Yazar" Multiplicity="1" />
+    <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yazar">
+        <PropertyRef Name="yazarID" />
+      </Principal>
+      <Dependent Role="Kitap">
+        <PropertyRef Name="yazarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OduncAlma_Kitap">
+    <End Role="Kitap" Type="Self.Kitap" Multiplicity="1" />
+    <End Role="OduncAlma" Type="Self.OduncAlma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kitap">
+        <PropertyRef Name="kitapID" />
+      </Principal>
+      <Dependent Role="OduncAlma">
+        <PropertyRef Name="kitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OduncAlma_Uye">
+    <End Role="Uye" Type="Self.Uye" Multiplicity="1" />
+    <End Role="OduncAlma" Type="Self.OduncAlma" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uye">
+        <PropertyRef Name="uyeID" />
+      </Principal>
+      <Dependent Role="OduncAlma">
+        <PropertyRef Name="uyeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Yonetici_Uye">
+    <End Role="Uye" Type="Self.Uye" Multiplicity="1" />
+    <End Role="Yonetici" Type="Self.Yonetici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uye">
+        <PropertyRef Name="uyeID" />
+      </Principal>
+      <Dependent Role="Yonetici">
+        <PropertyRef Name="uyeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KütüphaneModelStoreContainer">
+    <EntitySet Name="Kitap" EntityType="Self.Kitap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OduncAlma" EntityType="Self.OduncAlma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tur" EntityType="Self.Tur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uye" EntityType="Self.Uye" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YayinEvi" EntityType="Self.YayinEvi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yazar" EntityType="Self.Yazar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yonetici" EntityType="Self.Yonetici" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Kitap_Tur" Association="Self.FK_Kitap_Tur">
+      <End Role="Tur" EntitySet="Tur" />
+      <End Role="Kitap" EntitySet="Kitap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitap_YayinEvi" Association="Self.FK_Kitap_YayinEvi">
+      <End Role="YayinEvi" EntitySet="YayinEvi" />
+      <End Role="Kitap" EntitySet="Kitap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kitap_Yazar" Association="Self.FK_Kitap_Yazar">
+      <End Role="Yazar" EntitySet="Yazar" />
+      <End Role="Kitap" EntitySet="Kitap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OduncAlma_Kitap" Association="Self.FK_OduncAlma_Kitap">
+      <End Role="Kitap" EntitySet="Kitap" />
+      <End Role="OduncAlma" EntitySet="OduncAlma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OduncAlma_Uye" Association="Self.FK_OduncAlma_Uye">
+      <End Role="Uye" EntitySet="Uye" />
+      <End Role="OduncAlma" EntitySet="OduncAlma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Yonetici_Uye" Association="Self.FK_Yonetici_Uye">
+      <End Role="Uye" EntitySet="Uye" />
+      <End Role="Yonetici" EntitySet="Yonetici" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

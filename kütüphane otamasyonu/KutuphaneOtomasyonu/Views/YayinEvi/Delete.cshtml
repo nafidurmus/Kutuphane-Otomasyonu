@@ -1,0 +1,59 @@
+﻿@model KutuphaneOtomasyonu.Models.YayinEvi
+
+@{
+    ViewBag.Title = "Sil";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Silmek istiyor musunuz?</h3>
+    <div>
+        <h4>@Html.DisplayFor(model => model.yayineviAd)</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @*@Html.DisplayNameFor(model => model.yayineviAd)*@
+                Yayın Evi Adı
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.yayineviAd)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.yayineviTel)*@
+                Telefon Numarası
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.yayineviTel)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.yayineviAdres)*@
+                Adres
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.yayineviAdres)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Sil" class="btn btn-default" /> 
+                @Html.ActionLink("Listeye Dön", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

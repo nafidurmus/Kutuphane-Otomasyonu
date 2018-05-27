@@ -1,0 +1,81 @@
+
+/*============ header style ============*/
+body {
+    background:#f6f6f6;
+    overflow-x:hidden;
+}
+
+.page-title{
+    background: #e7e7e7 none repeat scroll 0 0;
+    border: 1px solid #c1c1c1;
+    font-weight: 100;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.widget {
+    background: #ececec none repeat scroll 0 0;
+    border: 1px solid #adadad;
+    border-radius: 5px 5px 0 0;
+    margin: 20px 0;
+    padding: 0;
+}
+.widget-title {
+    background: #e4e4e4 none repeat scroll 0 0;
+    border-radius: 5px 5px 0 0;
+    font-size: 22px;
+    font-weight: 100;
+    margin: 0;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.add-remove-class{
+    margin:15px 0px;
+}
+
+.show-more-snippet {
+    height:35px;
+    width:100%;
+    overflow:hidden;
+}
+
+#div-id{
+    display:none;
+}
+
+
+/** css gone here **/
+
+.near_by_hotel_wrapper{
+    background:#f5f5f5;
+}
+.custom_table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: -3px !important;
+}
+.custom_table thead tr th {
+    padding: 0px 8px;
+    font-size: 16px;
+    border: 0 none !important;
+    border-top: 0 none !important;
+}
+.custom_table tbody tr {
+    -moz-box-shadow: 0 2px 3px #e0e0e0;
+    -webkit-box-shadow: 0 2px 3px #e0e0e0;
+    box-shadow: 0 2px 3px #e0e0e0;
+}
+.near_by_hotel_wrapper table tr td {
+    border-right: 1px solid #d2d1d1;
+}
+
+.custom_table tbody tr td {
+    background: #fff none repeat scroll 0 0;
+    border-top: 0 none !important;
+    margin-bottom: 20px;
+    padding: 10px 8px;
+    font-size: 16px;
+}
+.near_by_hotel_wrapper table tr td {
+    border-right: 1px solid #d2d1d1;
+}

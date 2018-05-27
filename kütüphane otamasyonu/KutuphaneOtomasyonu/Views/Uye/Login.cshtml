@@ -1,0 +1,129 @@
+﻿@model KutuphaneOtomasyonu.Models.AuthModel
+@{
+    ViewBag.Title = "Giriş Yap - Kaydol";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="~/Content/giris_kayıt.css" rel="stylesheet" />
+<script src="~/Scripts/giris_kayıt.js"></script>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#" class="active" id="login-form-link">Giriş</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="#" id="register-form-link">Kayıt</a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+@using (Html.BeginForm("Giris", "Uye", FormMethod.Post))
+{
+                                <div id="login-form" style="display: block;">
+                                    @Html.ValidationSummary(true, "")
+                                    <div class="form-group">
+                                        @*<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Kullanıcı Adı" value="">*@
+                                        @Html.EditorFor(model => model.login.isim, new { htmlAttributes = new { @class = "form-control", placeholder = "Kullanıcı Adı" } })
+                                        @Html.ValidationMessageFor(model => model.login.isim, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        @*<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Şifre">*@
+                                        @Html.EditorFor(model => model.login.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Parola" } })
+                                        @Html.ValidationMessageFor(model => model.login.Password, "", new { @class = "text-danger" })
+                                    </div>
+                                    @Html.ValidationMessage("Hata")
+                                    <div class="form-group text-center">
+                                        <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                        <label for="remember"> Hatırla</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Giriş">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Şifremi Unuttum</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+                                <div id="register-form" style="display: none;">
+                                
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    
+
+                                    <div class="form-group">
+                                        @*@html.labelfor(model => model.uyead, "", htmlattributes: new { @class = "control-label col-md-2" })*@
+                                        @*<div class="col-md-10">*@
+                                            @Html.EditorFor(model => model.uye.uyeAd, new { htmlAttributes = new { @class = "form-control", placeholder = "İsim" } })
+                                            @Html.ValidationMessageFor(model => model.uye.uyeAd, "", new { @class = "text-danger" })
+                                        @*</div>*@
+                                    </div>
+
+                                    <div class="form-group">
+                                            @Html.EditorFor(model => model.uye.uyeSoyad, new { htmlAttributes = new { @class = "form-control", placeholder = "Soyisim" } })
+                                            @Html.ValidationMessageFor(model => model.uye.uyeSoyad, "", new { @class = "text-danger" })
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                            @Html.EditorFor(model => model.uye.uyeSifre, new { htmlAttributes = new { @class = "form-control", placeholder = "Parola" } })
+                                            @Html.ValidationMessageFor(model => model.uye.uyeSifre, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="form-group">
+                                            @Html.EditorFor(model => model.uye.uyeTel, new { htmlAttributes = new { @class = "form-control", placeholder = "Telefon Numarası" } })
+                                            @Html.ValidationMessageFor(model => model.uye.uyeTel, "", new { @class = "text-danger" })
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Kaydol" class="form-control btn btn-register" />
+                                        </div>
+                                    </div>
+                                </div>
+}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+            <div>
+                @Html.ActionLink("Uye Listesine Git", "Index")
+            </div>
+        
+     </body>
+</html>

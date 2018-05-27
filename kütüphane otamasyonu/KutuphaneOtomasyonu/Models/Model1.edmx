@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KütüphaneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Kitap">
+          <Key>
+            <PropertyRef Name="kitapID" />
+          </Key>
+          <Property Name="kitapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kitapAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="yazarID" Type="int" Nullable="false" />
+          <Property Name="yayinEviID" Type="int" Nullable="false" />
+          <Property Name="turID" Type="int" Nullable="false" />
+          <Property Name="kitapStok" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OduncAlma">
+          <Key>
+            <PropertyRef Name="oduncID" />
+          </Key>
+          <Property Name="oduncID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uyeID" Type="int" Nullable="false" />
+          <Property Name="kitapID" Type="int" Nullable="false" />
+          <Property Name="oduncAlmaTarihi" Type="datetime" Nullable="false" />
+          <Property Name="oduncTeslimTarihi" Type="datetime" Nullable="false" />
+          <Property Name="gecikmeSuresi" Type="int" Nullable="false" />
+          <Property Name="cezaBedeli" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tur">
+          <Key>
+            <PropertyRef Name="turID" />
+          </Key>
+          <Property Name="turID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="turAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Uye">
+          <Key>
+            <PropertyRef Name="uyeID" />
+          </Key>
+          <Property Name="uyeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uyeSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="uyeAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="uyeSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="uyeTel" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="YayinEvi">
+          <Key>
+            <PropertyRef Name="yayineviID" />
+          </Key>
+          <Property Name="yayineviID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="yayineviAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="yayineviTel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="yayineviAdres" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Yazar">
+          <Key>
+            <PropertyRef Name="yazarID" />
+          </Key>
+          <Property Name="yazarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="yazarAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="yazarSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Yonetici">
+          <Key>
+            <PropertyRef Name="yoneticiID" />
+          </Key>
+          <Property Name="yoneticiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="yoneticiSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="yoneticiAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="yoneticiSoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="uyeID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Kitap_Tur">
+          <End Role="Tur" Type="Self.Tur" Multiplicity="1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tur">
+              <PropertyRef Name="turID" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="turID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kitap_YayinEvi">
+          <End Role="YayinEvi" Type="Self.YayinEvi" Multiplicity="1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="YayinEvi">
+              <PropertyRef Name="yayineviID" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="yayinEviID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kitap_Yazar">
+          <End Role="Yazar" Type="Self.Yazar" Multiplicity="1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yazar">
+              <PropertyRef Name="yazarID" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="yazarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OduncAlma_Kitap">
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="1" />
+          <End Role="OduncAlma" Type="Self.OduncAlma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kitap">
+              <PropertyRef Name="kitapID" />
+            </Principal>
+            <Dependent Role="OduncAlma">
+              <PropertyRef Name="kitapID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OduncAlma_Uye">
+          <End Role="Uye" Type="Self.Uye" Multiplicity="1" />
+          <End Role="OduncAlma" Type="Self.OduncAlma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uye">
+              <PropertyRef Name="uyeID" />
+            </Principal>
+            <Dependent Role="OduncAlma">
+              <PropertyRef Name="uyeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Yonetici_Uye">
+          <End Role="Uye" Type="Self.Uye" Multiplicity="1" />
+          <End Role="Yonetici" Type="Self.Yonetici" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uye">
+              <PropertyRef Name="uyeID" />
+            </Principal>
+            <Dependent Role="Yonetici">
+              <PropertyRef Name="uyeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="KütüphaneModelStoreContainer">
+          <EntitySet Name="Kitap" EntityType="Self.Kitap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OduncAlma" EntityType="Self.OduncAlma" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tur" EntityType="Self.Tur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Uye" EntityType="Self.Uye" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="YayinEvi" EntityType="Self.YayinEvi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yazar" EntityType="Self.Yazar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yonetici" EntityType="Self.Yonetici" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Kitap_Tur" Association="Self.FK_Kitap_Tur">
+            <End Role="Tur" EntitySet="Tur" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kitap_YayinEvi" Association="Self.FK_Kitap_YayinEvi">
+            <End Role="YayinEvi" EntitySet="YayinEvi" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kitap_Yazar" Association="Self.FK_Kitap_Yazar">
+            <End Role="Yazar" EntitySet="Yazar" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OduncAlma_Kitap" Association="Self.FK_OduncAlma_Kitap">
+            <End Role="Kitap" EntitySet="Kitap" />
+            <End Role="OduncAlma" EntitySet="OduncAlma" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OduncAlma_Uye" Association="Self.FK_OduncAlma_Uye">
+            <End Role="Uye" EntitySet="Uye" />
+            <End Role="OduncAlma" EntitySet="OduncAlma" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Yonetici_Uye" Association="Self.FK_Yonetici_Uye">
+            <End Role="Uye" EntitySet="Uye" />
+            <End Role="Yonetici" EntitySet="Yonetici" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KütüphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Kitap">
+          <Key>
+            <PropertyRef Name="kitapID" />
+          </Key>
+          <Property Name="kitapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kitapAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="yazarID" Type="Int32" Nullable="false" />
+          <Property Name="yayinEviID" Type="Int32" Nullable="false" />
+          <Property Name="turID" Type="Int32" Nullable="false" />
+          <Property Name="kitapStok" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Tur" Relationship="Self.FK_Kitap_Tur" FromRole="Kitap" ToRole="Tur" />
+          <NavigationProperty Name="YayinEvi" Relationship="Self.FK_Kitap_YayinEvi" FromRole="Kitap" ToRole="YayinEvi" />
+          <NavigationProperty Name="Yazar" Relationship="Self.FK_Kitap_Yazar" FromRole="Kitap" ToRole="Yazar" />
+          <NavigationProperty Name="OduncAlma" Relationship="Self.FK_OduncAlma_Kitap" FromRole="Kitap" ToRole="OduncAlma" />
+        </EntityType>
+        <EntityType Name="OduncAlma">
+          <Key>
+            <PropertyRef Name="oduncID" />
+          </Key>
+          <Property Name="oduncID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uyeID" Type="Int32" Nullable="false" />
+          <Property Name="kitapID" Type="Int32" Nullable="false" />
+          <Property Name="oduncAlmaTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="oduncTeslimTarihi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="gecikmeSuresi" Type="Int32" Nullable="false" />
+          <Property Name="cezaBedeli" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="Kitap" Relationship="Self.FK_OduncAlma_Kitap" FromRole="OduncAlma" ToRole="Kitap" />
+          <NavigationProperty Name="Uye" Relationship="Self.FK_OduncAlma_Uye" FromRole="OduncAlma" ToRole="Uye" />
+        </EntityType>
+        <EntityType Name="Tur">
+          <Key>
+            <PropertyRef Name="turID" />
+          </Key>
+          <Property Name="turID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="turAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Kitap" Relationship="Self.FK_Kitap_Tur" FromRole="Tur" ToRole="Kitap" />
+        </EntityType>
+        <EntityType Name="Uye">
+          <Key>
+            <PropertyRef Name="uyeID" />
+          </Key>
+          <Property Name="uyeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uyeSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="uyeAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="uyeSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="uyeTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="OduncAlma" Relationship="Self.FK_OduncAlma_Uye" FromRole="Uye" ToRole="OduncAlma" />
+          <NavigationProperty Name="Yonetici" Relationship="Self.FK_Yonetici_Uye" FromRole="Uye" ToRole="Yonetici" />
+        </EntityType>
+        <EntityType Name="YayinEvi">
+          <Key>
+            <PropertyRef Name="yayineviID" />
+          </Key>
+          <Property Name="yayineviID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="yayineviAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="yayineviTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="yayineviAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Kitap" Relationship="Self.FK_Kitap_YayinEvi" FromRole="YayinEvi" ToRole="Kitap" />
+        </EntityType>
+        <EntityType Name="Yazar">
+          <Key>
+            <PropertyRef Name="yazarID" />
+          </Key>
+          <Property Name="yazarID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="yazarAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="yazarSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Kitap" Relationship="Self.FK_Kitap_Yazar" FromRole="Yazar" ToRole="Kitap" />
+        </EntityType>
+        <EntityType Name="Yonetici">
+          <Key>
+            <PropertyRef Name="yoneticiID" />
+          </Key>
+          <Property Name="yoneticiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="yoneticiSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="yoneticiAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="yoneticiSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="uyeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Uye" Relationship="Self.FK_Yonetici_Uye" FromRole="Yonetici" ToRole="Uye" />
+        </EntityType>
+        <Association Name="FK_Kitap_Tur">
+          <End Role="Tur" Type="Self.Tur" Multiplicity="1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tur">
+              <PropertyRef Name="turID" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="turID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kitap_YayinEvi">
+          <End Role="YayinEvi" Type="Self.YayinEvi" Multiplicity="1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="YayinEvi">
+              <PropertyRef Name="yayineviID" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="yayinEviID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kitap_Yazar">
+          <End Role="Yazar" Type="Self.Yazar" Multiplicity="1" />
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Yazar">
+              <PropertyRef Name="yazarID" />
+            </Principal>
+            <Dependent Role="Kitap">
+              <PropertyRef Name="yazarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OduncAlma_Kitap">
+          <End Role="Kitap" Type="Self.Kitap" Multiplicity="1" />
+          <End Role="OduncAlma" Type="Self.OduncAlma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kitap">
+              <PropertyRef Name="kitapID" />
+            </Principal>
+            <Dependent Role="OduncAlma">
+              <PropertyRef Name="kitapID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OduncAlma_Uye">
+          <End Role="Uye" Type="Self.Uye" Multiplicity="1" />
+          <End Role="OduncAlma" Type="Self.OduncAlma" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uye">
+              <PropertyRef Name="uyeID" />
+            </Principal>
+            <Dependent Role="OduncAlma">
+              <PropertyRef Name="uyeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Yonetici_Uye">
+          <End Role="Uye" Type="Self.Uye" Multiplicity="1" />
+          <End Role="Yonetici" Type="Self.Yonetici" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Uye">
+              <PropertyRef Name="uyeID" />
+            </Principal>
+            <Dependent Role="Yonetici">
+              <PropertyRef Name="uyeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="KütüphaneEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Kitap" EntityType="Self.Kitap" />
+          <EntitySet Name="OduncAlma" EntityType="Self.OduncAlma" />
+          <EntitySet Name="Tur" EntityType="Self.Tur" />
+          <EntitySet Name="Uye" EntityType="Self.Uye" />
+          <EntitySet Name="YayinEvi" EntityType="Self.YayinEvi" />
+          <EntitySet Name="Yazar" EntityType="Self.Yazar" />
+          <EntitySet Name="Yonetici" EntityType="Self.Yonetici" />
+          <AssociationSet Name="FK_Kitap_Tur" Association="Self.FK_Kitap_Tur">
+            <End Role="Tur" EntitySet="Tur" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kitap_YayinEvi" Association="Self.FK_Kitap_YayinEvi">
+            <End Role="YayinEvi" EntitySet="YayinEvi" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kitap_Yazar" Association="Self.FK_Kitap_Yazar">
+            <End Role="Yazar" EntitySet="Yazar" />
+            <End Role="Kitap" EntitySet="Kitap" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OduncAlma_Kitap" Association="Self.FK_OduncAlma_Kitap">
+            <End Role="Kitap" EntitySet="Kitap" />
+            <End Role="OduncAlma" EntitySet="OduncAlma" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OduncAlma_Uye" Association="Self.FK_OduncAlma_Uye">
+            <End Role="Uye" EntitySet="Uye" />
+            <End Role="OduncAlma" EntitySet="OduncAlma" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Yonetici_Uye" Association="Self.FK_Yonetici_Uye">
+            <End Role="Uye" EntitySet="Uye" />
+            <End Role="Yonetici" EntitySet="Yonetici" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KütüphaneModelStoreContainer" CdmEntityContainer="KütüphaneEntities1">
+          <EntitySetMapping Name="Kitap">
+            <EntityTypeMapping TypeName="KütüphaneModel.Kitap">
+              <MappingFragment StoreEntitySet="Kitap">
+                <ScalarProperty Name="kitapID" ColumnName="kitapID" />
+                <ScalarProperty Name="kitapAd" ColumnName="kitapAd" />
+                <ScalarProperty Name="yazarID" ColumnName="yazarID" />
+                <ScalarProperty Name="yayinEviID" ColumnName="yayinEviID" />
+                <ScalarProperty Name="turID" ColumnName="turID" />
+                <ScalarProperty Name="kitapStok" ColumnName="kitapStok" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OduncAlma">
+            <EntityTypeMapping TypeName="KütüphaneModel.OduncAlma">
+              <MappingFragment StoreEntitySet="OduncAlma">
+                <ScalarProperty Name="oduncID" ColumnName="oduncID" />
+                <ScalarProperty Name="uyeID" ColumnName="uyeID" />
+                <ScalarProperty Name="kitapID" ColumnName="kitapID" />
+                <ScalarProperty Name="oduncAlmaTarihi" ColumnName="oduncAlmaTarihi" />
+                <ScalarProperty Name="oduncTeslimTarihi" ColumnName="oduncTeslimTarihi" />
+                <ScalarProperty Name="gecikmeSuresi" ColumnName="gecikmeSuresi" />
+                <ScalarProperty Name="cezaBedeli" ColumnName="cezaBedeli" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tur">
+            <EntityTypeMapping TypeName="KütüphaneModel.Tur">
+              <MappingFragment StoreEntitySet="Tur">
+                <ScalarProperty Name="turID" ColumnName="turID" />
+                <ScalarProperty Name="turAd" ColumnName="turAd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uye">
+            <EntityTypeMapping TypeName="KütüphaneModel.Uye">
+              <MappingFragment StoreEntitySet="Uye">
+                <ScalarProperty Name="uyeID" ColumnName="uyeID" />
+                <ScalarProperty Name="uyeSifre" ColumnName="uyeSifre" />
+                <ScalarProperty Name="uyeAd" ColumnName="uyeAd" />
+                <ScalarProperty Name="uyeSoyad" ColumnName="uyeSoyad" />
+                <ScalarProperty Name="uyeTel" ColumnName="uyeTel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="YayinEvi">
+            <EntityTypeMapping TypeName="KütüphaneModel.YayinEvi">
+              <MappingFragment StoreEntitySet="YayinEvi">
+                <ScalarProperty Name="yayineviID" ColumnName="yayineviID" />
+                <ScalarProperty Name="yayineviAd" ColumnName="yayineviAd" />
+                <ScalarProperty Name="yayineviTel" ColumnName="yayineviTel" />
+                <ScalarProperty Name="yayineviAdres" ColumnName="yayineviAdres" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yazar">
+            <EntityTypeMapping TypeName="KütüphaneModel.Yazar">
+              <MappingFragment StoreEntitySet="Yazar">
+                <ScalarProperty Name="yazarID" ColumnName="yazarID" />
+                <ScalarProperty Name="yazarAd" ColumnName="yazarAd" />
+                <ScalarProperty Name="yazarSoyad" ColumnName="yazarSoyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yonetici">
+            <EntityTypeMapping TypeName="KütüphaneModel.Yonetici">
+              <MappingFragment StoreEntitySet="Yonetici">
+                <ScalarProperty Name="yoneticiID" ColumnName="yoneticiID" />
+                <ScalarProperty Name="yoneticiSifre" ColumnName="yoneticiSifre" />
+                <ScalarProperty Name="yoneticiAd" ColumnName="yoneticiAd" />
+                <ScalarProperty Name="yoneticiSoyad" ColumnName="yoneticiSoyad" />
+                <ScalarProperty Name="uyeID" ColumnName="uyeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

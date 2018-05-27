@@ -1,0 +1,48 @@
+﻿@model IEnumerable<KutuphaneOtomasyonu.Models.Yazar>
+
+@{
+    ViewBag.Title = "Yazarlar";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body style="margin-top: 30px;">
+    <p>
+        @Html.ActionLink("Yeni Yazar Ekle", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.yazarAd)*@
+                Yazarın Adı
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.yazarSoyad)*@
+                Yazarın Soyadı
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.yazarAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.yazarSoyad)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new { id=item.yazarID }) |
+                @Html.ActionLink("Detaylar", "Details", new { id=item.yazarID }) |
+                @Html.ActionLink("Sil", "Delete", new { id=item.yazarID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

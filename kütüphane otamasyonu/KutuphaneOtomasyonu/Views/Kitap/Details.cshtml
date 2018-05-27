@@ -1,0 +1,89 @@
+﻿@model KutuphaneOtomasyonu.Models.Kitap
+
+@{
+    ViewBag.Title = "Kitap Detay Bilgisi";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Kitap Bilgileri</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <h4 style="margin-left: 50px;"><b>Kitap</b></h4>
+            <dt>
+                @*@Html.DisplayNameFor(model => model.kitapAd)*@
+                Adı
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.kitapAd)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.kitapStok)*@
+                Stok Durumu
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.kitapStok)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.Tur.turAd)*@
+                Türü
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Tur.turAd)
+            </dd>
+    
+            <h4 style="margin-left: 50px;"><b>Yayın Evi</b></h4>
+            <dt>
+                @*@Html.DisplayNameFor(model => model.YayinEvi.yayineviAd)*@
+                Adı
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.YayinEvi.yayineviAd)
+            </dd>
+
+            <dt>
+                Telefon No
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.YayinEvi.yayineviTel)
+            </dd>
+
+            <dt>
+                Adres
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.YayinEvi.yayineviAdres)
+            </dd>
+    
+            <h4 style="margin-left: 50px;"><b>Yazar</b></h4>
+            <dt>
+                @*@Html.DisplayNameFor(model => model.Yazar.yazarAd)*@
+                Yazar Adı
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Yazar.yazarAd)  @Html.DisplayFor(model => model.Yazar.yazarSoyad)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.kitapID }) |
+        @Html.ActionLink("Listeye Dön", "Index")
+    </p>
+</body>
+</html>

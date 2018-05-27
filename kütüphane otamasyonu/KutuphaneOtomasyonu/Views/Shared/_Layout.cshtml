@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Online Kütüphane", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Ödünç İade", "Iade", "Home", new { id = User.Identity.Name.Split('|')[1] }, null)</li>
+                        <li>@Html.ActionLink("Kitap Bilgileri", "About", "Home")</li>
+                        <li>@Html.ActionLink("Ceza Ödeme", "CezaOde", "Home")</li>
+                    }
+                    
+
+                    @if (User.Identity.Name.Split('|')[0] == "admin")
+                    {
+                        <li>@Html.ActionLink("Yayın Evleri", "Index", "YayinEvi")</li>
+                        <li>@Html.ActionLink("Türler", "Index", "Tur")</li>
+                        <li>@Html.ActionLink("Yazarlar", "Index", "Yazar")</li>
+                        @*<li>@Html.ActionLink("Üye Listesi", "Index", "Uye")</li>*@
+                    }
+                    
+                    <li>@Html.ActionLink("Kitaplar", "Index", "Kitap")</li>
+                    
+                </ul>
+                <ul class="nav navbar-nav" style="margin-left:auto; margin-right:0; float:right; ">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li> @Html.ActionLink("Giriş Yap - Kaydol", "Login", "Uye") </li>
+                    }
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Hoşgeldiniz " +User.Identity.Name.Split('|')[0] + " " + User.Identity.Name.Split('|')[2], "Details","Uye", new { id = User.Identity.Name.Split('|')[1] }, null)</li>
+                        <li>@Html.ActionLink("Çıkış Yap", "LogOut", "Uye")</li>
+                    }
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - NİBEK Kütüphane Otomasyonu / SDU Yazılım Mühendisliği Projesi.</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

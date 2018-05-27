@@ -1,0 +1,350 @@
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\ApplicationInsights.config
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll.config
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.pdb
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe.config
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.rsp
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.exe
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.rsp
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.AppContext.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe.config
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.rsp
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\WebGrease.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.pdb
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Razor.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Net.Http.Formatting.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.WebHost.resources.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.csproj.CopyComplete
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.pdb
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.xml
+C:\Users\kemal\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\ApplicationInsights.config
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll.config
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.pdb
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe.config
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.rsp
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.exe
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.rsp
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.AppContext.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe.config
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.rsp
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\WebGrease.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.pdb
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Razor.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Net.Http.Formatting.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.WebHost.resources.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.dll
+C:\Users\Er1m\Desktop\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.pdb
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\ApplicationInsights.config
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll.config
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.pdb
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe.config
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.rsp
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.exe
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.rsp
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.AppContext.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe.config
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.rsp
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\WebGrease.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.pdb
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Helpers.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Mvc.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Optimization.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Razor.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Net.Http.Formatting.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.WebHost.resources.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.dll
+C:\inetpub\wwwroot\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.pdb
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\ApplicationInsights.config
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll.config
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\KutuphaneOtomasyonu.pdb
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.exe.config
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csc.rsp
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.exe
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\csi.rsp
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.AppContext.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.exe.config
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\vbc.rsp
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\WebGrease.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\EntityFramework.SqlServer.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Optimization.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Antlr3.Runtime.pdb
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Newtonsoft.Json.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\Microsoft.AI.Web.xml
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Razor.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Net.Http.Formatting.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\bin\tr\System.Web.Http.WebHost.resources.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.dll
+C:\Users\Er1m\Desktop\Kutuphane Otomasyonu\KutuphaneOtomasyonu\KutuphaneOtomasyonu\obj\Debug\KutuphaneOtomasyonu.pdb

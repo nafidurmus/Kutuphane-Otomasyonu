@@ -1,0 +1,44 @@
+﻿@model KutuphaneOtomasyonu.Models.Yazar
+
+@{
+    ViewBag.Title = "Yazar Detay Bilgisi";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Yazar Bilgileri</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @*@Html.DisplayNameFor(model => model.yazarAd)*@
+                Yazarın Adı
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.yazarAd)
+            </dd>
+    
+            <dt>
+                @*@Html.DisplayNameFor(model => model.yazarSoyad)*@
+                Yazarın Soyadı
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.yazarSoyad)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.yazarID }) |
+        @Html.ActionLink("Listeye Dön", "Index")
+    </p>
+</body>
+</html>
