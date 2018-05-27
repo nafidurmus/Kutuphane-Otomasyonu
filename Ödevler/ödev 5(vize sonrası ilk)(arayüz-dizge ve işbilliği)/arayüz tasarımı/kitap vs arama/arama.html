@@ -1,0 +1,84 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+      <ul class="nav nav-pills nav-justified">
+    <li class="active"><a data-toggle="pill" href="#home">Kitap</a></li>
+    <li><a data-toggle="pill" href="#menu1">Makale</a></li>
+    <li><a data-toggle="pill" href="#menu2">E-Kitap</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <p></p>  
+<form action="http://vufind.carli.illinois.edu/vf-aru/Search/Home" method="get" role="search" target="vufind">
+<div class="input-group lrcInputs"><input class="form-control" id="search-text" name="lookfor" placeholder="Kitap ara" type="text" />
+<div class="input-group-btn"><button class="btn btn-success lrcSearchButton" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+</div>
+</form>
+<p></p>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+<p></p> 
+<script src="http://support.ebsco.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+
+	<form class="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;" target="_blank">
+		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="0" />
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://library.aurora.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=afh&db=aph&db=vth&db=rfh&db=bai&db=bth&db=bsh&db=ccm&db=rzh&db=cgh&db=chh&db=cmr&db=ufh&db=c9h&db=i3h&db=dah&db=eoah&db=e000xna&db=nlebk&db=20h&db=eih&db=eric&db=funk&db=8gh&db=hxh&db=hch&db=hta&db=llf&db=ulh&db=f5h&db=mnh&db=mth&db=nfh&db=eed&db=poh&db=prh&db=tfh&db=pdh&db=psyh&db=bwh&db=swh&db=sih&db=s3h&db=trh&db=undefined&mode=bool&lang=en&authtype=ip" />
+		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+	
+
+
+
+		<div class="input-group lrcInputs"><input class="form-control" id="ebscohostsearchtext" placeholder="Makale ara" type="text" />
+		<div class="input-group-btn"><button class="btn btn-success lrcSearchButton" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+		</div>		
+		
+		
+
+	
+
+		<div id="limiterblock" style="margin-left:-px; overflow: auto; display:none;">
+			<div id="limitertitle" style="font-weight:bold;padding-top:25px;padding-bottom:5px;">Limit Your Results</div>
+			
+			<div class="limiter" style="display:none;">
+				<input type="checkbox" id="chkFullText" name="chkFullText"  />
+				<label for="chkFullText">Full Text</label>
+			</div>
+			
+			<div class="limiter" style="display:none;">
+				<input type="checkbox" id="chkReferencesAvailable" name="chkReferencesAvailable"  />
+				<label for="chkReferencesAvailable">References Available</label>
+			</div>
+			
+			<div class="limiter" style="display:none;">
+				<input type="checkbox" id="chkPeerReviewed" name="chkPeerReviewed"  />
+				<label for="chkPeerReviewed">Peer Reviewed</label>
+			</div>
+			
+		</div>
+				
+	</form>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+     <p></p>
+<form action="http://sfx.carli.illinois.edu/sfxaru/journalsearch/Default" method="get" role="search" target="AZ_Window">
+<div class="input-group lrcInputs"><input class="form-control" id="param_pattern_value" placeholder="E-kitap ara" type="text" name="param_pattern_value" />
+<div class="input-group-btn"><button class="btn btn-success lrcSearchButton" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+</div>
+</form>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+</div>

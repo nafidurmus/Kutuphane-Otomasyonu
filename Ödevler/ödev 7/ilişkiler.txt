@@ -1,0 +1,38 @@
+                  Ýliþkiler
+1)Her üye aylýk 0..3 kitap alabilir 0..* kitap verebilir
+2)her üye 0..* arasý kitap aratabilir
+3)yönetici 0..* kitap ekleyebilir
+4)yönetici 0..* kitap silebilir
+5)yönetici 0..* kitap günceleyebilir
+6)yönetici 0..* üye ekleyebilir silebilir günceleyebilir
+7)her kitabýn 1..* yazarý olabilir
+8)her kitabýn 1..* kitap türü olabilir
+9)her kitabýn 1 adý olur
+10)her kitabý 1 üye ödünç alabilir
+
+                Ýþlevsel gereksinimler
+#üye, yönetici ve kitap bilgilerine ait  veri tabaný oluþturulmasý ve sorgularýn çalýþýrlýðýnýn denetlenmesi
+#üye : kitab adý , yazar adý , türüne ve etc.. gibi  sorgu yapabilecek.
+
+#yönetici : kitap ekleme , silme , güncelleme iþlemlerini yapabilme
+#yönetici : kitab adý , yazar adý , türüne ve etc.. gibi  sorgu yapabilecek.
+
+#yönetici : üye ekleme , üye silme , üye güncelleme iþlemlerini yapabilmeli.
+#yönetici : kitablarýn ne zaman kitap teslim edebileceðine eriþebilmeli.
+
+# iade tarihi yaklaþmýþ ya da geçmiþ ise üyelere bildirim gitmeli ve geç kalacaðý günler için ücret hesabý yapýlmalý
+
+-mevcut kitap bilgileri
+-yeni kitap bilgileri
+-üye bilgileri
+-kullanýcý bilgileri
+-emanet bilgileri
+
+               Ýþlevsel olmayan gereksinimler
+------------------------------
+-projede kullanýlacak editör: Visual Studio
+-projenin geliþme ortamý: C#
+-Projenin kullanýlacaðý bilgisayar: Hepsi
+-projede kullanýlacak veri tabaný : mssql veya mysql
+-projede kullanýlacak server : LocalHost
+

@@ -1,0 +1,8 @@
+body {
+    padding-top: 75px;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+   background-color: #48A948;
+}
